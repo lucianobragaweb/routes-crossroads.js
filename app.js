@@ -1,15 +1,28 @@
 //setup crossroads
 crossroads.addRoute('/', function(){
-	console.log('Hello!')
+	render('home')
 });
 
 crossroads.addRoute('/products', function(){
-	console.log('Bye!')
+	render('products')
 });
 
 crossroads.addRoute('/contact', function(){
-	console.log('Bye!')
+	render('contact')
 });
+
+function render(id){
+	resetPages();
+	document.getElementById(id).style.display = 'block'
+}
+
+function resetPages(){
+	var pages = document.querySelectorAll('.page');
+
+	[].forEach.call(pages, function(page){
+		page.style.display = 'none'
+	})
+}
 
 //setup hasher
 function parseHash(newHash, oldHash){
