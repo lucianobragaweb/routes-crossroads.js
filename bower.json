@@ -1,0 +1,14 @@
+{
+  "name": "rotas",
+  "authors": [
+    "lucianobragaweb <lucianobragagroairas@gmail.com>"
+  ],
+  "description": "JavaScript Routes with Crossroads.js library",
+  "main": "",
+  "license": "MIT",
+  "homepage": "http://lucianobragaweb.com.br",
+  "dependencies": {
+    "crossroads.js": "^0.12.2",
+    "hasher": "^1.2.0"
+  }
+}
